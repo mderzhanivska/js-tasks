@@ -13,12 +13,14 @@ function openSliderModal() {
     infinite: true,
     speed: 800,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    fade: true,
+    cssEase: 'linear'
   });
 }
-
-openSlider ();
 openSliderModal ();
+openSlider ();
+
 
 
 
