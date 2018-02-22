@@ -1,0 +1,223 @@
+<div class="tabs">
+  <div class="tabs__buttons">
+    <button class="tablink active" onclick="openTab(event, 'tab1')">Tab1</button>
+    <button class="tablink" onclick="openTab(event, 'tab2')">Tab2</button>
+  </div>
+  <div id="tab1" class="tabs__tab">
+    <div id="slider" class="slider">
+      <div>
+        <div class="slides">
+           <div class="slides__sl slide">
+             <img class="slide__img" src="img/1.jpg" alt="">
+             <h2 class="slide__title">Tab1 Title1</h2>
+             <p class="slide__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid animi consectetur excepturi facilis, nisi temporibus ut vel? Cum distinctio in inventore iusto odio perferendis porro provident quidem quos, voluptatibus?</p>
+             <span class="slide__info">Oct, 24 Something #1</span>
+             <button id="btnModal" class="slide__button btnModal">more</button>
+           </div>
+        </div>
+      </div>
+      <div>
+        <div class="slides">
+          <div class="slides__sl slide">
+             <img class="slide__img" src="img/2.jpg" alt="">
+             <h2 class="slide__title">Tab1 Title2</h2>
+             <p class="slide__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid animi consectetur excepturi facilis, nisi temporibus ut vel? Cum distinctio in inventore iusto odio perferendis porro provident quidem quos, voluptatibus?</p>
+             <span class="slide__info">Oct, 24 Something #2</span>
+             <button id="btnModal" class="slide__button btnModal">more</button>
+           </div>
+        </div>
+      </div>
+      <div>
+        <div class="slides">
+           <div class="slides__sl slide">
+             <img class="slide__img" src="img/3.jpg" alt="">
+             <h2 class="slide__title">Tab1 Title3</h2>
+             <p class="slide__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid animi consectetur excepturi facilis, nisi temporibus ut vel? Cum distinctio in inventore iusto odio perferendis porro provident quidem quos, voluptatibus?</p>
+             <span class="slide__info">Oct, 24 Something #3</span>
+             <button id="btnModal" class="slide__button btnModal">more</button>
+           </div>
+         </div>
+      </div>
+      <div>
+        <div class="slides">
+          <div class="slides__sl slide">
+             <img class="slide__img" src="img/4.jpg" alt="">
+             <h2 class="slide__title">Tab1 Title4</h2>
+             <p class="slide__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid animi consectetur excepturi facilis, nisi temporibus ut vel? Cum distinctio in inventore iusto odio perferendis porro provident quidem quos, voluptatibus?</p>
+             <span class="slide__info">Oct, 24 Something #4</span>
+             <button id="btnModal" class="slide__button btnModal">more</button>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="tab2" class="tabs__tab" style="display: none;">
+      <div id="slider" class="slider">
+           <div>
+             <div class="slides">
+                <div class="slides__sl slide">
+                  <img class="slide__img" src="img/1.jpg" alt="">
+                  <h2 class="slide__title">Tab1 Title1</h2>
+                  <p class="slide__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid animi consectetur excepturi facilis, nisi temporibus ut vel? Cum distinctio in inventore iusto odio perferendis porro provident quidem quos, voluptatibus?</p>
+                  <span class="slide__info">Oct, 24 Something #1</span>
+                  <button id="btnModal" class="slide__button btnModal">more</button>
+                </div>
+             </div>
+           </div>
+           <div>
+             <div class="slides">
+               <div class="slides__sl slide">
+                  <img class="slide__img" src="img/2.jpg" alt="">
+                  <h2 class="slide__title">Tab1 Title2</h2>
+                  <p class="slide__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid animi consectetur excepturi facilis, nisi temporibus ut vel? Cum distinctio in inventore iusto odio perferendis porro provident quidem quos, voluptatibus?</p>
+                  <span class="slide__info">Oct, 24 Something #2</span>
+                  <button id="btnModal" class="slide__button btnModal">more</button>
+                </div>
+             </div>
+           </div>
+           <div>
+             <div class="slides">
+                <div class="slides__sl slide">
+                  <img class="slide__img" src="img/3.jpg" alt="">
+                  <h2 class="slide__title">Tab1 Title3</h2>
+                  <p class="slide__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid animi consectetur excepturi facilis, nisi temporibus ut vel? Cum distinctio in inventore iusto odio perferendis porro provident quidem quos, voluptatibus?</p>
+                  <span class="slide__info">Oct, 24 Something #3</span>
+                  <button id="btnModal" class="slide__button btnModal">more</button>
+                </div>
+              </div>
+           </div>
+           <div>
+             <div class="slides">
+               <div class="slides__sl slide">
+                  <img class="slide__img" src="img/4.jpg" alt="">
+                  <h2 class="slide__title">Tab1 Title4</h2>
+                  <p class="slide__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid animi consectetur excepturi facilis, nisi temporibus ut vel? Cum distinctio in inventore iusto odio perferendis porro provident quidem quos, voluptatibus?</p>
+                  <span class="slide__info">Oct, 24 Something #4</span>
+                  <button id="btnModal" class="slide__button btnModal">more</button>
+                </div>
+             </div>
+           </div>
+         </div>
+  </div>
+</div>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">x</span>
+    <div id="sliderModal" class="sliderModal">
+      <div>
+        <div class="modalSlide">
+          <div class="modalSlide__info text">
+            <h2 class="text__title">Modal Tab1 Slide1</h2>
+            <ul class="text__list">
+              <li>text 1</li>
+              <li>text 2</li>
+              <li>text 3</li>
+              <li>text 4</li>
+            </ul>
+            <span class="text__info">Oct, 24 Something #1</span>
+          </div>
+          <div class="modalSlide__img">
+            <img src="img/1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="modalSlide">
+          <div class="modalSlide__info text">
+            <h2 class="text__title">Modal Tab1 Slide2</h2>
+            <ul class="text__list">
+              <li>text 1</li>
+              <li>text 2</li>
+              <li>text 3</li>
+              <li>text 4</li>
+            </ul>
+            <span class="text__info">Oct, 24 Something #2</span>
+          </div>
+          <div class="modalSlide__img">
+            <img src="img/2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="modalSlide">
+          <div class="modalSlide__info text">
+            <h2 class="text__title">Modal Tab1 Slide3</h2>
+            <ul class="text__list">
+              <li>text 1</li>
+              <li>text 2</li>
+              <li>text 3</li>
+              <li>text 4</li>
+            </ul>
+            <span class="text__info">Oct, 24 Something #3</span>
+          </div>
+          <div class="modalSlide__img">
+            <img src="img/3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="modalSlide">
+          <div class="modalSlide__info text">
+            <h2 class="text__title">Modal Tab1 Slide4</h2>
+            <ul class="text__list">
+              <li>text 1</li>
+              <li>text 2</li>
+              <li>text 3</li>
+              <li>text 4</li>
+            </ul>
+            <span class="text__info">Oct, 24 Something #4</span>
+          </div>
+          <div class="modalSlide__img">
+            <img src="img/4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<script>
+function openTab(evt, tabName) {
+    let i;
+    const tab = document.getElementsByClassName("tabs__tab");
+    for (i = 0; i < tab.length; i++) {
+        tab[i].style.display = "none";
+    }
+    const tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tab.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+<script>
+ function openModal() {
+   const modal = document.getElementById('modal');
+   const btn = document.getElementById('btnModal');
+   const span = document.getElementsByClassName('close')[0];
+   debugger;
+   btn.onclick = function() {
+     modal.style.display = 'block';
+   };
+   span.onclick = function() {
+     modal.style.display = 'none';
+   };
+
+   window.onclick = function(event) {
+     if (event.target === modal) {
+       modal.style.display = 'none';
+     }
+   };
+ }
+ openModal ();
+</script>
+
+
+

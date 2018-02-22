@@ -1,0 +1,51 @@
+.slider {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.slick-prev,
+.slick-next {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    opacity: 1;
+}
+
+.slick-prev {
+    left: -7%;
+    background-color: #14a9e7;
+    &:hover, &:focus {
+        background-color: #0099ff;
+    }
+    &:before {
+        content: '<';
+        background-repeat: no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        color: #fff;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+}
+.slick-next {
+    right: -7%;
+    background-color: #14a9e7;
+    &:hover, &:focus {
+        background-color: #0099ff;
+    }
+    &:before {
+        content: '>';
+        background-image: url("../img/rectangle-21.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        color: #fff;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+}
+
+
