@@ -44,6 +44,10 @@
         padding: 0 10px;
         color: $black;
         font-size: 35px;
+        @media #{$desktop} {
+            font-size: 30px;
+        }
+
     }
     &__desc {
         padding: 0 10px;
@@ -69,5 +73,6 @@
         }
     }
 }
+
 
 

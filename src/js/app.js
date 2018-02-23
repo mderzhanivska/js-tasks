@@ -1,6 +1,6 @@
 import 'slick-carousel';
 
-
+// slider in popup script start
 
 window.onload = () => {
   openModal();
@@ -37,6 +37,16 @@ function initSlider(slide, number) {
     fade: !!slide.dataset.fade,
     cssEase: slide.dataset.css || '',
     slidesToShow: slide.dataset.slides || 1,
+    responsive: [
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }],
     dots: true,
     dotsClass:'slider-paging-number',
     customPaging: function(slick) { return (slick.currentSlide + 1) + '/' + slick.slideCount; }
@@ -71,6 +81,11 @@ function openModal() {
     }
   };
 }
+
+// slider in popup script end
+
+//custom select script start
+
 
 
 

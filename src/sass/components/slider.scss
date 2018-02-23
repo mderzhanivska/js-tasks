@@ -1,6 +1,15 @@
 .slider {
     width: 40%;
     margin: 0 auto;
+    @media #{$tablet} {
+        width: 60%;
+    }
+    @media #{$phone} {
+        width: 80%;
+    }
+    @media #{$mobile} {
+        width: 80%;
+    }
 }
 
 .slick-prev,
@@ -16,6 +25,12 @@
     position: absolute;
     left: -9%;
     background-color: #14a9e7;
+    @media #{$phone} {
+       left: -6%;
+    }
+    @media #{$mobile} {
+        left: -11%;
+    }
     &:hover, &:focus {
         background-color: #0099ff;
     }
@@ -40,6 +55,12 @@
 .slick-next {
     right: -9%;
     background-color: #14a9e7;
+    @media #{$phone} {
+        right: -6%;
+    }
+    @media #{$mobile} {
+        right: -11%;
+    }
     &:hover, &:focus {
         background-color: #0099ff;
     }
