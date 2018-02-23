@@ -3,3 +3,5 @@ ProjectTitle: js
 PageList:
 - file: page.html
   ready: 50
+- file: customSelect.html
+  ready: 50
