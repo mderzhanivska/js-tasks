@@ -36,9 +36,13 @@ function initSlider(slide, number) {
     adaptiveHeight: true,
     fade: !!slide.dataset.fade,
     cssEase: slide.dataset.css || '',
-    slidesToShow: slide.dataset.slides || 1
+    slidesToShow: slide.dataset.slides || 1,
+    dots: true,
+    dotsClass:'slider-paging-number',
+    customPaging: function(slick) { return (slick.currentSlide + 1) + '/' + slick.slideCount; }
+  }).on('afterChange', function(event, slick, currentSlide) {
+    $(this).find('*[role="tablist"]').find('li').eq(0).text(slick.options.customPaging.call(this, slick, currentSlide));
   });
-
   slide.dataset.init = true;
 }
 

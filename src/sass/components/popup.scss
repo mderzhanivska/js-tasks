@@ -22,6 +22,7 @@
     }
     &__tab {
         padding-top: 10px;
+        position: relative;
     }
 }
 .slides {
@@ -37,6 +38,7 @@
     &__img {
         width: 100%;
         height: 180px;
+        border-bottom: 1px solid $blue;
     }
     &__title {
         padding: 0 10px;
@@ -67,3 +69,5 @@
         }
     }
 }
+
+
